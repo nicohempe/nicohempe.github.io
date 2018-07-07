@@ -14,8 +14,12 @@ font-family: 'Montserrat', sans-serif;
 #ffa200 light orange
 */
 
+html{
+  background-color: #d9cfd2;
+}
 
-/* Convert Styles
+
+/* Styles
 main---
 */
 .masthead {
