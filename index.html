@@ -23,7 +23,7 @@
 
     <div>
       <input type="text">
-      <button>Insert</button>
+      <button id="btn">Add</button>
     </div>
   </div>
   <div class="app">
@@ -34,7 +34,7 @@
     <script>
       var list = document.querySelector('ul');
       var input = document.querySelector('input');
-      var button = document.querySelector('button');
+      var button = document.querySelector('#btn');
       button.onclick = function() {
         var myItem = input.value;
         input.value = '';
@@ -45,12 +45,14 @@
         listText.textContent = myItem;
         listItem.appendChild(listBtn);
         listBtn.textContent = 'Remove';
+        listBtn.style.cssFloat = "right";
         list.appendChild(listItem);
         listBtn.onclick = function(e) {
           list.removeChild(listItem);
         }
         input.focus();
       }
+
     </script>
   </div>
   </body>
