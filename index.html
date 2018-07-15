@@ -3,57 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping list example</title>
-    <style>
-      li {
-        margin-bottom: 10px;
-      }
-      li button {
-        font-size: 8px;
-        margin-left: 20px;
-        color: #666;
-      }
-    </style>
-    <link rel="stylesheet" href="shopstyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <title>Item List</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">  
+    <script src="main.js" defer></script>
   </head>
   <body>
-  <div class="masthead">
-    <h1>Item List</h1>
+    <header class="masthead">
+      <h1>Item List</h1>
+    </header>
 
-    <div>
-      <input type="text">
-      <button id="btn">Add</button>
-    </div>
-  </div>
-  <div class="app">
-    <ul>
-
-    </ul>
-
-    <script>
-      var list = document.querySelector('ul');
-      var input = document.querySelector('input');
-      var button = document.querySelector('#btn');
-      button.onclick = function() {
-        var myItem = input.value;
-        input.value = '';
-        var listItem = document.createElement('li');
-        var listText = document.createElement('span');
-        var listBtn = document.createElement('button');
-        listItem.appendChild(listText);
-        listText.textContent = myItem;
-        listItem.appendChild(listBtn);
-        listBtn.textContent = 'Remove';
-        listBtn.style.cssFloat = "right";
-        list.appendChild(listItem);
-        listBtn.onclick = function(e) {
-          list.removeChild(listItem);
-        }
-        input.focus();
-      }
-
-    </script>
-  </div>
+    <main>
+      <section class="masthead">
+        <h2></h2>
+        <form>
+          <div>
+            <label for="title"></label>
+            <input id="title" type="text" required><button>Add</button>
+          </div>
+        </form>
+      </section>
+      <section class="app">
+        <h2></h2>
+        <ul>
+        </ul>
+      </section>    
+    </main>
   </body>
 </html>

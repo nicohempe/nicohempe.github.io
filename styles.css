@@ -1,0 +1,48 @@
+/* Shop Styles
+Global---
+*/
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/* Colors
+#ff6300 orange
+#e60000 red
+#c20070 light purple
+#ffa200 light orange
+*/
+
+html{
+  background-color: #d9cfd2;
+}
+
+
+/* Styles
+main---
+*/
+.masthead {
+  background-color: #ff6300;
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  align-text: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#title{
+    margin-right: 5px;
+}
+
+.app {
+  background-color: #ffa200;
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  font-size: 1.2em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
