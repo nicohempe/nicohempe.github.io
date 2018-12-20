@@ -7,6 +7,10 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">  
     <script src="main.js" defer></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="masthead">
@@ -19,9 +23,14 @@
         <form>
           <div>
             <label for="title"></label>
-            <input id="title" type="text" required><button>Add</button>
+            <input id="title" type="text" required><button onclick='curs()'>Add</button>
           </div>
         </form>
+        <script>
+          function curs() {
+            $("#title").focus();
+          }
+        </script>
       </section>
       <section class="app">
         <h2></h2>
