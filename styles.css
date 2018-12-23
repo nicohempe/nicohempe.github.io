@@ -12,10 +12,12 @@ font-family: 'Montserrat', sans-serif;
 #e60000 red
 #c20070 light purple
 #ffa200 light orange
+#14b200 bright green
+#0d7a00 dark green
 */
 
 html{
-  background-color: #d9cfd2;
+  background-color:white;
 }
 
 
@@ -23,26 +25,66 @@ html{
 main---
 */
 .masthead {
-  background-color: #ff6300;
+  background-color: #14b200;
   color: white;
   font-family:'Open Sans', sans-serif;
-  align-text: center;
   width: 80%;
   margin: 0 auto;
   padding: 20px;
 }
 
 #title{
-    margin-right: 5px;
+  margin-right: 5px;
+}
+
+
+.btn {
+  margin-left: 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  width: 50px;
+  height: 20px;
+}
+
+.btn2 {
+  margin-left: 0;
+  border: 1px solid #0d7a00;
+  background-color: white;
+  color: black;
+  height: 20px;
+  margin-top: -40px;
 }
 
 .app {
-  background-color: #ffa200;
-  color: white;
+  background-color: white;
+  color: black;
   font-family:'Open Sans', sans-serif;
   font-size: 1.2em;
   width: 80%;
   margin: 0 auto;
-  padding: 20px;
+}
+
+@media only screen and (max-width: 415px) {
+  .masthead {
+    width: 90%;
+  }
+
+  .app {
+    width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 376px) {
+  .masthead {
+    width: calc(90% - 5px);
+  }
+
+  .app {
+    width: 90%;
+    margin: 0;
+  }
+
 }
 

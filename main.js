@@ -121,6 +121,8 @@ window.onload = function() {
 
         // Create a button and place it inside each listItem
         let deleteBtn = document.createElement('button');
+        deleteBtn.classList.add('btn2');
+        deleteBtn.style.cssFloat = 'right';
         listItem.appendChild(deleteBtn);
         deleteBtn.textContent = 'Remove';
 
